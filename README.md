@@ -12,7 +12,7 @@ A minimalist, hardware-encrypted email client and terminal designed specifically
 
 * **🔒 Application-Level AES-128 Encryption:** Your Wi-Fi passwords and Email App Passwords are never stored in plain text. They are encrypted using an onboard AES-128 block cipher before being written to the ESP32's Non-Volatile Storage (NVS). Even if the flash memory is physically dumped, your credentials remain secure.
 * **📬 Bidirectional Communication (SMTP & IMAP):** * **Compose & Send:** Draft multi-line emails and transmit them securely over SSL/TLS (Port 465/587).
-  * **Inbox Reader:** Fetch, read, and scroll through your top 10 most recent emails directly on the screen.
+  * **Inbox Reader:** Fetch, read, and scroll through your last most recent email directly on the screen. (Due To Limitations with libarary and my ability to be bothered currently can only fetch 1 email)
 * **⚡ Instant Provider Presets:** Switch between **Gmail**, **Outlook / Office365**, **Yahoo Mail**, and **Custom Server** configurations with a single keystroke (`FN + P`).
 * **🎨 Flicker-Free UI:** Built using `M5Canvas` memory sprites for clean, instant frame pushes with zero screen tearing. Features a Gmail-inspired color palette with active visual field indicators.
 * **🔄 Multi-Firmware Compatible:** Because it uses application-level encryption rather than system-wide eFuse flash locking, this firmware is 100% compatible with bootloaders like **M5Launcher**.
